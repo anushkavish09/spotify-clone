@@ -1,7 +1,7 @@
 
 let play = document.getElementById('play');
 let progressBar = document.getElementById('progressBar');
-let audio = new Audio('Audio/1.mp3');
+let audio = new Audio('audio/1.mp3');
 
 let currentSong = 1;
 
@@ -48,7 +48,7 @@ playMusic.forEach((element) => {
 
         index = parseInt(e.target.id);
         currentSong = index;
-        audio.src = `Audio/${index}.mp3`;
+        audio.src = `audio/${index}.mp3`;
         audio.currentTime = 0;
         audio.play();
         updateNowBar();
@@ -58,24 +58,24 @@ playMusic.forEach((element) => {
 let allMusic = Array.from(document.getElementsByClassName('music-card'));
 
 songs = [
-    { songName: 'Song 1', songDes: 'This is the description for song 1', songImage: 'Images/1.jpg', songPath: 'Audio/1.mp3' },
-    { songName: 'Song 2', songDes: 'This is the description for song 2', songImage: 'Images/2.jpg', songPath: 'Audio/2.mp3' },
-    { songName: 'Song 3', songDes: 'This is the description for song 3', songImage: 'Images/3.jpg', songPath: 'Audio/3.mp3' },
-    { songName: 'Song 4', songDes: 'This is the description for song 4', songImage: 'Images/4.jpg', songPath: 'Audio/1.mp3' },
-    { songName: 'Song 5', songDes: 'This is the description for song 5', songImage: 'Images/1.jpg', songPath: 'Audio/4.mp3' },
-    { songName: 'Song 6', songDes: 'This is the description for song 6', songImage: 'Images/2.jpg', songPath: 'Audio/2.mp3' },
-    { songName: 'Song 7', songDes: 'This is the description for song 7', songImage: 'Images/3.jpg', songPath: 'Audio/3.mp3' },
-    { songName: 'Song 8', songDes: 'This is the description for song 8', songImage: 'Images/4.jpg', songPath: 'Audio/4.mp3' },
-    { songName: 'Song 9', songDes: 'This is the description for song 9', songImage: 'Images/1.jpg', songPath: 'Audio/2.mp3' },
-    { songName: 'Song 10', songDes: 'This is the description for song 10', songImage: 'Images/1.jpg', songPath: 'Audio/1.mp3' },
-    { songName: 'Song 11', songDes: 'This is the description for song 11', songImage: 'Images/2.jpg', songPath: 'Audio/4.mp3' },
-    { songName: 'Song 12', songDes: 'This is the description for song 12', songImage: 'Images/2.jpg', songPath: 'Audio/2.mp3' },
-    { songName: 'Song 13', songDes: 'This is the description for song 13', songImage: 'Images/3.jpg', songPath: 'Audio/1.mp3' },
-    { songName: 'Song 14', songDes: 'This is the description for song 14', songImage: 'Images/4.jpg', songPath: 'Audio/1.mp3' },
-    { songName: 'Song 15', songDes: 'This is the description for song 15', songImage: 'Images/1.jpg', songPath: 'Audio/4.mp3' },
-    { songName: 'Song 16', songDes: 'This is the description for song 16', songImage: 'Images/2.jpg', songPath: 'Audio/3.mp3' },
-    { songName: 'Song 17', songDes: 'This is the description for song 17', songImage: 'Images/2.jpg', songPath: 'Audio/2.mp3' },
-    { songName: 'Song 18', songDes: 'This is the description for song 18', songImage: 'Images/4.jpg', songPath: 'Audio/1.mp3' }
+    { songName: 'Song 1', songDes: 'This is the description for song 1', songImage: 'images/1.jpg', songPath: 'audio/1.mp3' },
+    { songName: 'Song 2', songDes: 'This is the description for song 2', songImage: 'images/2.jpg', songPath: 'audio/2.mp3' },
+    { songName: 'Song 3', songDes: 'This is the description for song 3', songImage: 'images/3.jpg', songPath: 'audio/3.mp3' },
+    { songName: 'Song 4', songDes: 'This is the description for song 4', songImage: 'images/4.jpg', songPath: 'audio/1.mp3' },
+    { songName: 'Song 5', songDes: 'This is the description for song 5', songImage: 'images/1.jpg', songPath: 'audio/4.mp3' },
+    { songName: 'Song 6', songDes: 'This is the description for song 6', songImage: 'images/2.jpg', songPath: 'audio/2.mp3' },
+    { songName: 'Song 7', songDes: 'This is the description for song 7', songImage: 'images/3.jpg', songPath: 'audio/3.mp3' },
+    { songName: 'Song 8', songDes: 'This is the description for song 8', songImage: 'images/4.jpg', songPath: 'audio/4.mp3' },
+    { songName: 'Song 9', songDes: 'This is the description for song 9', songImage: 'images/1.jpg', songPath: 'audio/2.mp3' },
+    { songName: 'Song 10', songDes: 'This is the description for song 10', songImage: 'images/1.jpg', songPath: 'audio/1.mp3' },
+    { songName: 'Song 11', songDes: 'This is the description for song 11', songImage: 'images/2.jpg', songPath: 'audio/4.mp3' },
+    { songName: 'Song 12', songDes: 'This is the description for song 12', songImage: 'images/2.jpg', songPath: 'audio/2.mp3' },
+    { songName: 'Song 13', songDes: 'This is the description for song 13', songImage: 'images/3.jpg', songPath: 'audio/1.mp3' },
+    { songName: 'Song 14', songDes: 'This is the description for song 14', songImage: 'images/4.jpg', songPath: 'audio/1.mp3' },
+    { songName: 'Song 15', songDes: 'This is the description for song 15', songImage: 'images/1.jpg', songPath: 'audio/4.mp3' },
+    { songName: 'Song 16', songDes: 'This is the description for song 16', songImage: 'images/2.jpg', songPath: 'audio/3.mp3' },
+    { songName: 'Song 17', songDes: 'This is the description for song 17', songImage: 'images/2.jpg', songPath: 'audio/2.mp3' },
+    { songName: 'Song 18', songDes: 'This is the description for song 18', songImage: 'images/4.jpg', songPath: 'audio/1.mp3' }
 ]
 
 order = [...songs];
@@ -150,7 +150,7 @@ playNextSong = () => {
 playPrevSong = () => {
     let prevSong = (currentSong - 1);
     currentSong = prevSong == 0 ? 18 : prevSong;
-    audio.src = `Audio/${currentSong}.mp3`;
+    audio.src = `audio/${currentSong}.mp3`;
     audio.currentTime = 0;
     audio.play();
     updateNowBar();
